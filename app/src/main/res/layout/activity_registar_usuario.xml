@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.nameless.posterappshit.RegistarUsuario"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        >
+
+
+        <TextView
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:text="Registe-se aqui"
+            android:textSize="20sp"
+            android:paddingLeft="25dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/inputNomeUsuario"
+            >
+
+            <EditText
+                android:id="@+id/editNomeUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do usuario"
+                android:textColorHint="#4a54d2"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/inputEmail"
+            >
+
+
+            <EditText
+                android:id="@+id/email_login_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#4a54d2"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/inputSenha"
+            >
+
+            <EditText
+
+                android:id="@+id/password_login_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+
+
+                />
+
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/inputConfirSenha"
+            >
+
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/password2_login_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar senha "
+                android:textColorHint="#4a54d2"
+                android:inputType="textPassword"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:onClick="signUp"
+            android:background="@drawable/shape_effect_login"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao login"
+        android:gravity="center"
+        android:layout_marginLeft="150dp"
+        android:textSize="15sp"
+        android:textColor="#7b7373"
+        android:onClick="voltarLogin"
+
+
+        />
+
+</LinearLayout>
